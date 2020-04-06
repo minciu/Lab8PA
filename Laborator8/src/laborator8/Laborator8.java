@@ -75,7 +75,7 @@ public class Laborator8 {
           albumController.create("The Number of the Beast", 2, 1982);
           albumController.create("2112", 1, 1976);
           albumController.create("Powerslave", 2, 1984);
-           
+          albumController.create("Permanent Waves", 1, 1980);
            
           while(res.next()){
             int id =res.getInt("id");
