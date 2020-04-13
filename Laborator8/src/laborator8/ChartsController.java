@@ -21,7 +21,7 @@ public class ChartsController  {
         stat.execute();
     }
 
-    public void insertGeneratedChart(int rows) throws SQLException {
+    public void insertChart(int rows) throws SQLException {
         Connection conex = Database.getInstance().getConnection();
         Statement stat = conex.createStatement();
         
@@ -41,7 +41,7 @@ public class ChartsController  {
         }
     }
 
-    public void generateTop() throws SQLException {
+    public void Top() throws SQLException {
         List<Map<String, Object>> top = new ArrayList<>();
         Connection conex = Database.getInstance().getConnection();
         Statement stat = conex.createStatement();
